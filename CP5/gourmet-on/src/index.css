@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #FAF6EF;
+    color: #1C1C1E;
+  }
+  h1, h2, h3 { font-family: 'Playfair Display', serif; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gold text-white px-8 py-3 rounded-full font-medium text-base transition-all duration-200 hover:-translate-y-0.5 cursor-pointer border-none inline-flex items-center gap-2;
+  }
+  .btn-outline {
+    @apply bg-transparent text-white px-8 py-3 rounded-full font-medium text-base border border-white/30 transition-all duration-200 hover:border-white/70 cursor-pointer;
+  }
+  .section-label {
+    @apply text-gold text-xs tracking-widest uppercase font-medium mb-2 block;
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: none;
+  }
+}
