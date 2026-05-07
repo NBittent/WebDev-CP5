@@ -1,4 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Montserrat', Arial, sans-serif;    input, textarea {
+      color: #4e2e1e; /* Outback brown */
+      background-color: #000; /* Optional: white background for contrast */
+    }
+    background-color: #f5e9da; /* Outback beige */
+    color: #4e2e1e; /* Outback brown */
+  }
+  h1, h2, h3 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-3 rounded-full font-bold text-base transition-all duration-200 cursor-pointer border-none inline-flex items-center gap-2;
+    background-color: #7c2629; /* Outback dark red */
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .btn-primary:hover {
+    background-color: #4e2e1e; /* Outback brown */
+  }
+  .btn-outline {
+    @apply px-8 py-3 rounded-full font-bold text-base border transition-all duration-200 cursor-pointer;
+    background-color: transparent;
+    color: #7c2629;
+    border: 2px solid #7c2629;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .btn-outline:hover {
+    background-color: #7c2629;
+    color: #fff;
+    border-color: #4e2e1e;
+  }
+  .section-label {
+    color: #7c2629;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: none;
+  }
+}@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
