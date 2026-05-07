@@ -34,38 +34,5 @@ src/
 └── index.css
 ```
 
-## Como Rodar
-
-```bash
-# Instalar dependências
-npm install
-
-# Servidor de desenvolvimento
-npm run dev
-
-# Build para produção
-npm run build
-```
-
-## API de Comidas
-
-Na seção **Cardápio**, insira sua chave gratuita da [Spoonacular API](https://spoonacular.com/food-api) para buscar receitas reais. Sem a chave, o app exibe 8 receitas de exemplo.
-
-## Deploy (Vercel)
-
-```bash
-npm install -g vercel
-vercel
-```
-
-## Integrantes do Grupo
-
-| Nome | RM |
-|---|---|
-| Integrante 1 | RM XXXXX |
-| Integrante 2 | RM XXXXX |
-| Integrante 3 | RM XXXXX |
-| Integrante 4 | RM XXXXX |
-| Integrante 5 | RM XXXXX |
 
 © 2025 GourmetOn · Check-Point 05 · FIAP
